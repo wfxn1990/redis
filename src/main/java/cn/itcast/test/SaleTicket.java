@@ -5,6 +5,7 @@ class Ticket {
 
     public synchronized void  saleTicket() {
         if (number > 0) {
+
             System.out.println(Thread.currentThread().getName() + "\t卖出第：" + (number--) + "\t还剩下：" + number);
         }
     }
